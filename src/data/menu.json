@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "category": "نوشیدنی گرم",
+    "name": "اسپرسو",
+    "description": "یک شات اسپرسو اصیل",
+    "price": 45000,
+    "image": "/images/espresso.jpg"
+  },
+  {
+    "id": 2,
+    "category": "نوشیدنی سرد",
+    "name": "لیموناد",
+    "description": "لیموناد خانگی",
+    "price": 35000,
+    "image": "/images/lemonade.jpg"
+  }
+]
