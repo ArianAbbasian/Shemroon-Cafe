@@ -2,16 +2,16 @@ import ContactCard from '../components/ContactCard';
 import cafeInfo from '../data/cafeInfo.json';
 
 export default function AboutPage() {
-  // اطلاعات کافه – اینها را می‌توانید از یک فایل JSON هم بگیرید
+  
   const cafeInfo = {
-    logo: '/images/logo.png',              // لوگوی کافه شمیران
-    name: 'کافه شمیران',
+    logo: '/images/logo.png',              
+    name: 'کافه شمرون',
     slogan: 'ما اینجا شادی می‌فروشیم.',
     address: 'تهران، اتوبان خرازی، ایران مال',
-    phone: '02147672074',                 // شماره واقعی خودتان بگذارید
-    instagram: 'shemroon_cafe',            // آیدی اینستاگرام (بدون @)
+    phone: '09378753874',                 
+    instagram: 'cafe_chay_shemroon',            
     mapLinks: {
-      image: '/images/map-preview.jpg',    // یک تصویر از نقشه (اختیاری)
+      image: '/images/map-preview.jpg',    
       neshan: 'https://maps.neshan.org/...',
       balad: 'https://balad.ir/...',
       waze: 'https://waze.com/ul?q=...',
