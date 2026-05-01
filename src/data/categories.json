@@ -55,13 +55,13 @@
   },
   {
     "id": "tea-service",
-    "name": "سرویس چای",
+    "name": "سرویس چای ",
     "englishName": "Tea Service",
     "icon": "/images/caticons/teas.png"
   },
   {
     "id": "hookah",
-    "name": "قلیان",
+    "name": "قلیان ",
     "englishName": "Hookah",
     "icon": ""
   }
