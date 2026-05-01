@@ -28,7 +28,7 @@ export default function MenuItemCard({ item }) {
           </p>
         )}
 
-        {/* قیمت */}
+        {/* قیمت    */}
         <div className="flex items-baseline gap-1 mt-auto">
           <span className="text-lg font-extrabold text-amber-900">
             {item.price.toLocaleString()}
