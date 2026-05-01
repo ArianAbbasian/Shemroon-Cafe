@@ -1,0 +1,68 @@
+[
+  {
+    "id": "breakfast",
+    "name": "صبحانه",
+    "englishName": "Breakfast",
+    "icon": "/images/caticons/breakFast.png"
+  },
+  {
+    "id": "fast-food",
+    "name": "فست فود",
+    "englishName": "Fast Food",
+    "icon": "/images/caticons/burger.png"
+  },
+  {
+    "id": "brewed-coffee",
+    "name": "قهوه دمی",
+    "englishName": "Brewed Coffee",
+    "icon": "/images/caticons/iceCoffe.png"
+  },
+  {
+    "id": "hot-drinks",
+    "name": "نوشیدنی های گرم",
+    "englishName": "Hot Drinks",
+    "icon": "/images/caticons/hotDrinks.png"
+  },
+  {
+    "id": "caffeine-bar",
+    "name": "کافین بار شمرون",
+    "englishName": "Caffeine Bar",
+    "icon": "/images/caticons/hotDrinks.png"
+  },
+  {
+    "id": "tea",
+    "name": "چای",
+    "englishName": "Tea",
+    "icon": "/images/caticons/teas.png"
+  },
+  {
+    "id": "beverages",
+    "name": "نوشیدنی",
+    "englishName": "Beverages",
+    "icon": "/images/caticons/coldDrinks.png"
+  },
+  {
+    "id": "herbal-tea",
+    "name": "دمنوش ها",
+    "englishName": "Herbal Tea",
+    "icon": "/images/caticons/teas.png"
+  },
+  {
+    "id": "cake-dessert",
+    "name": "کیک و دسر",
+    "englishName": "Cake & Dessert",
+    "icon": "/images/caticons/dessert.png"
+  },
+  {
+    "id": "tea-service",
+    "name": "سرویس چای",
+    "englishName": "Tea Service",
+    "icon": "/images/caticons/teas.png"
+  },
+  {
+    "id": "hookah",
+    "name": "قلیان",
+    "englishName": "Hookah",
+    "icon": ""
+  }
+]
