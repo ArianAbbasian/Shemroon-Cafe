@@ -17,7 +17,7 @@ export default function MenuItemRow({ item }) {
         )}
       </div>
       <span className="text-base font-extrabold text-amber-900 mr-4 whitespace-nowrap">
-        {item.price.toLocaleString()} تومان
+        {item.price.toLocaleString()} تومان $
       </span>
     </div>
   );
