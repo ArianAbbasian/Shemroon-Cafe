@@ -3,6 +3,7 @@ import categories from '../data/categories.json';
 import menuItems from '../data/menu.json';
 import Sidebar from '../components/Sidebar';
 import MenuContent from '../components/MenuContent';
+import MenuHeader from '../components/MenuHeader';
 
 export default function MenuPage() {
   const [activeCategory, setActiveCategory] = useState(categories[0]?.name || '');
@@ -21,16 +22,22 @@ export default function MenuPage() {
   }, [categories]);
 
   return (
-    <div className="flex flex-row-reverse min-h-screen bg-gray-50">
-      <Sidebar
-        categories={categories}
-        activeCategory={activeCategory}
-        onCategoryClick={handleCategoryClick}
-      />
-      <MenuContent
-        categories={categories}
-        groupedItems={groupedItems}
-      />
+    <div className="min-h-screen flex flex-col bg-gray-50">
+      {/* هدر جدید */}
+      <MenuHeader />
+
+      {/* بدنه اصلی: سایدبار + محتوای منو */}
+      <div className="flex flex-1 flex-row-reverse">
+        <Sidebar
+          categories={categories}
+          activeCategory={activeCategory}
+          onCategoryClick={handleCategoryClick}
+        />
+        <MenuContent
+          categories={categories}
+          groupedItems={groupedItems}
+        />
+      </div>
     </div>
   );
 }
