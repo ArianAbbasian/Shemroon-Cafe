@@ -47,3 +47,26 @@ body {
   direction: rtl;
   font-family: 'IranYekan', sans-serif;
 }
+
+@layer utilities {
+  .bg-menu-pattern {
+    background-color: #fefce8;
+    background-image: radial-gradient(circle at 25% 50%, rgba(255,255,255,0.8) 0%, transparent 80%);
+  }
+  .card-shadow {
+    box-shadow: 0 4px 20px -4px rgba(0,0,0,0.06), 0 0 0 1px rgba(255,255,255,0.8);
+  }
+  .card-hover-shadow {
+    box-shadow: 0 12px 28px -6px rgba(0,0,0,0.1), 0 0 0 1px rgba(255,255,255,0.8);
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

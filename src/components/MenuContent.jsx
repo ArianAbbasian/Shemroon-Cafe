@@ -1,5 +1,4 @@
-import { useRef } from 'react';
-import MenuItemCard from './MenuItemCard';
+import MenuItemCard from "./MenuItemCard";
 
 export default function MenuContent({ categories, groupedItems }) {
   return (
@@ -7,8 +6,11 @@ export default function MenuContent({ categories, groupedItems }) {
       {categories.map((cat) => (
         <section key={cat.id} id={`cat-${cat.id}`} className="mb-12">
           {/* عنوان دسته‌بندی */}
-          <h2 className="text-2xl font-extrabold text-amber-950 mb-6 pb-2 border-b-2 border-amber-200">
-            {cat.name}
+          <h2 className="relative text-center text-3xl font-black text-amber-950 mb-10 pt-6">
+            <span className="relative z-10 bg-menu-pattern px-6">
+              {cat.name}
+            </span>
+            <span className="absolute left-1/2 top-1/2 -translate-x-1/2 h-px w-full bg-gradient-to-r from-transparent via-amber-400 to-transparent"></span>
           </h2>
 
           {/* گرید محصولات */}
@@ -18,7 +20,9 @@ export default function MenuContent({ categories, groupedItems }) {
                 <MenuItemCard key={item.id} item={item} />
               ))
             ) : (
-              <p className="text-gray-400 text-sm col-span-full">فعلاً آیتمی در این دسته ثبت نشده.</p>
+              <p className="text-gray-400 text-sm col-span-full">
+                فعلاً آیتمی در این دسته ثبت نشده.
+              </p>
             )}
           </div>
         </section>
