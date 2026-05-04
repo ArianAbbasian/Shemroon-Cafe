@@ -3,7 +3,8 @@ import categories from '../data/categories.json';
 import menuItems from '../data/menu.json';
 import Sidebar from '../components/Sidebar';
 import MenuContent from '../components/MenuContent';
-import MenuHeader from '../components/MenuHeader';
+import MenuTopHeader from '../components/MenuTopHeader';
+import CategoryScrollBar from '../components/CategoryScrollBar';
 
 export default function MenuPage() {
   const [activeCategory, setActiveCategory] = useState(categories[0]?.name || '');
@@ -15,20 +16,28 @@ export default function MenuPage() {
 
   const handleCategoryClick = useCallback((categoryName) => {
     setActiveCategory(categoryName);
-    const section = document.getElementById(`cat-${categories.find(c => c.name === categoryName)?.id}`);
+    const section = document.getElementById(
+      `cat-${categories.find(c => c.name === categoryName)?.id}`
+    );
     if (section) {
       section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }, [categories]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
-      {/* هدر جدید */}
-      <MenuHeader />
+    <div className="flex flex-row-reverse min-h-screen bg-menu-pattern">
+      {/* سایدبار دسکتاپ */}
+      <Sidebar
+        categories={categories}
+        activeCategory={activeCategory}
+        onCategoryClick={handleCategoryClick}
+      />
 
-      {/* بدنه اصلی: سایدبار + محتوای منو */}
-      <div className="flex flex-1 flex-row-reverse">
-        <Sidebar
+      {/* بخش اصلی */}
+      <div className="flex-1 flex flex-col min-w-0">
+        <MenuTopHeader />
+        {/* نوار دسته‌بندی موبایل */}
+        <CategoryScrollBar
           categories={categories}
           activeCategory={activeCategory}
           onCategoryClick={handleCategoryClick}

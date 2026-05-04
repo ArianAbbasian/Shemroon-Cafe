@@ -1,13 +1,13 @@
 {
-  "name": "کافه شمیران",
+  "name": "کافه شمرون",
   "slogan": "ما اینجا شادی می‌فروشیم.",
-  "logo": "/images/logo.png",
-  "address": "تهران، اتوبان خرازی، ایران مال",
-  "phone": "02147672074",
-  "instagram": "shemroon_cafe",
+  "logo": "/images/Logo.png",
+  "address": "تهران، میدان تجریش ، خیابان دربندی",
+  "phone": "09378753874",
+  "instagram": "cafe_chay_shemroon",
   "mapLinks": {
-    "image": "/images/map-preview.jpg",
-    "neshan": "...",
+    "image": "/images/map-preview.png",
+    "neshan": "https://nshn.ir/d4_bvf5qexi0xd",
     "balad": "...",
     "waze": "...",
     "google": "..."
