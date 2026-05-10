@@ -60,7 +60,7 @@ export default function MenuContent({
         >
           {/* عنوان دسته‌بندی */}
           <h2 className="relative text-center text-3xl font-black text-amber-950 mb-10 pt-6">
-            <span className="relative z-10 bg-[#fefce8] px-6">{cat.name}</span>
+            <span className="relative z-10 bg-gray-50 px-6">{cat.name}</span>
             <span className="absolute left-0 right-0 top-1/2 h-px bg-amber-300"></span>
           </h2>
 
