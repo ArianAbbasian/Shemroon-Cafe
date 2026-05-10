@@ -1,6 +1,6 @@
 export default function CategoryScrollBar({ categories, activeCategory, onCategoryClick }) {
   return (
-    <div className="md:hidden bg-white border-b border-gray-100 shadow-sm sticky top-[80px] z-10">
+    <div className="md:hidden bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm sticky top-[77px] z-30">
       <div className="flex overflow-x-auto gap-3 px-4 py-3 no-scrollbar">
         {categories.map((cat) => (
           <button

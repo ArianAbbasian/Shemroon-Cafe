@@ -8,35 +8,42 @@ import CategoryScrollBar from '../components/CategoryScrollBar';
 
 export default function MenuPage() {
   const [activeCategory, setActiveCategory] = useState(categories[0]?.name || '');
+  const [manualScrollActive, setManualScrollActive] = useState(false);
 
   const groupedItems = {};
   categories.forEach(cat => {
     groupedItems[cat.name] = menuItems.filter(item => item.category === cat.name);
   });
 
+  // کلیک روی یک دسته (سایدبار یا نوار موبایل)
   const handleCategoryClick = useCallback((categoryName) => {
     setActiveCategory(categoryName);
-    const section = document.getElementById(
-      `cat-${categories.find(c => c.name === categoryName)?.id}`
-    );
+    const section = document.getElementById(`cat-${categories.find(c => c.name === categoryName)?.id}`);
     if (section) {
+      // فعال کردن پرچم اسکرول دستی
+      setManualScrollActive(true);
       section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // بعد از تقریباً ۷۰۰ میلی‌ثانیه اجازهٔ به‌روزرسانی مجدد را می‌دهیم
+      setTimeout(() => {
+        setManualScrollActive(false);
+      }, 700);
     }
   }, [categories]);
 
+  // وقتی اسکرول طبیعی انجام شود و بخش جدید فعال گردد
+  const handleScrollActive = useCallback((categoryName) => {
+    setActiveCategory(categoryName);
+  }, []);
+
   return (
-    <div className="flex flex-row-reverse min-h-screen bg-menu-pattern">
-      {/* سایدبار دسکتاپ */}
+    <div className="flex flex-row-reverse min-h-screen bg-gray-50">
       <Sidebar
         categories={categories}
         activeCategory={activeCategory}
         onCategoryClick={handleCategoryClick}
       />
-
-      {/* بخش اصلی */}
       <div className="flex-1 flex flex-col min-w-0">
         <MenuTopHeader />
-        {/* نوار دسته‌بندی موبایل */}
         <CategoryScrollBar
           categories={categories}
           activeCategory={activeCategory}
@@ -45,6 +52,8 @@ export default function MenuPage() {
         <MenuContent
           categories={categories}
           groupedItems={groupedItems}
+          onActiveCategoryChange={handleScrollActive}
+          manualScrollActive={manualScrollActive}
         />
       </div>
     </div>
