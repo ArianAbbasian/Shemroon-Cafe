@@ -29,7 +29,7 @@
   { "id": 28, "category": "نوشیدنی", "name": "شیرموز", "description": "", "price": 0, "image": "/images/menu/bananaMilk.jpg", "popular": false, "tags": [] },
   { "id": 29, "category": "نوشیدنی", "name": "آب میوه طبیعی", "description": "", "price": 0, "image": "/images/menu/juices.jpg", "popular": false, "tags": [] },
   { "id": 30, "category": "دمنوش ها", "name": "دمنوش آویشن", "description": "", "price": 0, "image": "/images/menu/avishan.jpg", "popular": false, "tags": [] },
-  { "id": 31, "category": "دمنوش ها", "name": "دمنوش گل گاوزبان ", "description": "", "price": 0, "image": "/images/menu/golGav.jpg", "popular": false, "tags": [] },
+  { "id": 31, "category": "دمنوش ها", "name": "دمنوش گل گاوزبان", "description": "", "price": 0, "image": "/images/menu/golGav.jpg", "popular": false, "tags": [] },
   { "id": 32, "category": "دمنوش ها", "name": "دمنوش بهار نارنج", "description": "", "price": 0, "image": "/images/menu/baharNarenj.jpg", "popular": false, "tags": [] },
   { "id": 33, "category": "دمنوش ها", "name": "دمنوش بابونه", "description": "", "price": 0, "image": "/images/menu/baboone.jpg", "popular": false, "tags": [] },
   { "id": 34, "category": "دمنوش ها", "name": "دمنوش پونه", "description": "", "price": 0, "image": "/images/menu/poone.jpg", "popular": false, "tags": [] },
@@ -43,5 +43,36 @@
   { "id": 42, "category": "قلیان", "name": "دوسیب آلبالو", "description": "", "price": 0, "image": "/images/menu/hookah.jpeg", "popular": false, "tags": [] },
   { "id": 43, "category": "قلیان", "name": "لیدی کیلر", "description": "", "price": 0, "image": "/images/menu/hookah.jpeg", "popular": false, "tags": [] },
   { "id": 44, "category": "قلیان", "name": "شیخ مونی", "description": "", "price": 0, "image": "/images/menu/hookah.jpeg", "popular": false, "tags": [] },
-  { "id": 45, "category": "قلیان", "name": "سلطان پرطرفدار دوسیب", "description": "", "price": 0, "image": "/images/menu/hookah.jpeg", "popular": false, "tags": [] }
+  { "id": 45, "category": "قلیان", "name": "سلطان پرطرفدار دوسیب", "description": "", "price": 0, "image": "/images/menu/hookah.jpeg", "popular": false, "tags": [] },
+
+  { "id": 46, "category": "کیک و دسر", "name": "باقلوا", "description": "", "price": 0, "image": "/images/menu/baghlava.jpg", "popular": false, "tags": [] },
+
+  { "id": 47, "category": "کافین بار شمرون", "name": "موکا فندق", "description": "موکا با طعم فندق", "price": 0, "image": "/images/menu/moka-fandogh.jpg", "popular": false, "tags": [] },
+  { "id": 48, "category": "کافین بار شمرون", "name": "کورتادو", "description": "", "price": 0, "image": "/images/menu/kortado.jpg", "popular": false, "tags": [] },
+  { "id": 49, "category": "کافین بار شمرون", "name": "آفوگاتو", "description": "اسپرسو با بستنی وانیلی", "price": 0, "image": "/images/menu/afogato.jpg", "popular": false, "tags": [] },
+  { "id": 50, "category": "کافین بار شمرون", "name": "آیس کارامل ماکیاتو", "description": "کارامل ماکیاتوی خنک", "price": 0, "image": "/images/menu/Iced-Caramel-Macchiato.jpg", "popular": false, "tags": [] },
+  { "id": 51, "category": "کافین بار شمرون", "name": "آیس لانگ بلک گاز دار", "description": "", "price": 0, "image": "/images/menu/ice-long-black-gasdar.jpg", "popular": false, "tags": [] },
+  { "id": 52, "category": "کافین بار شمرون", "name": "آیس کوکوتونیک", "description": "", "price": 0, "image": "/images/menu/ice-cocotonic.jpg", "popular": false, "tags": [] },
+  { "id": 53, "category": "کافین بار شمرون", "name": "آیس موکا نوتلا", "description": "", "price": 0, "image": "/images/menu/ice-moka-nutella.jpg", "popular": false, "tags": [] },
+  { "id": 54, "category": "کافین بار شمرون", "name": "آیس لاته", "description": "", "price": 0, "image": "/images/menu/ice-latte.jpg", "popular": false, "tags": [] },
+  { "id": 55, "category": "کافین بار شمرون", "name": "آیس کاپوچینو", "description": "", "price": 0, "image": "/images/menu/iced-cappuccino.jpg", "popular": false, "tags": [] },
+  { "id": 56, "category": "کافین بار شمرون", "name": "کافه گلاسه", "description": "", "price": 0, "image": "/images/menu/cafe-gelase.jpg", "popular": false, "tags": [] },
+
+  { "id": 57, "category": "نوشیدنی های گرم", "name": "هات پسته", "description": "نوشیدنی گرم با طعم پسته", "price": 0, "image": "/images/menu/hot-peste.jpg", "popular": false, "tags": [] },
+  { "id": 58, "category": "نوشیدنی های گرم", "name": "وایت چاکلت", "description": "شکلات سفید داغ", "price": 0, "image": "/images/menu/white-chocolate.jpg", "popular": false, "tags": [] },
+
+  { "id": 59, "category": "نوشیدنی", "name": "آیس چاکلت", "description": "", "price": 0, "image": "/images/menu/ice-choclete.jpg", "popular": false, "tags": [] },
+  { "id": 60, "category": "نوشیدنی", "name": "شیرموز پسته", "description": "", "price": 0, "image": "/images/menu/shir-moz-peste.jpg", "popular": false, "tags": [] },
+
+  { "id": 61, "category": "چای", "name": "چای کرک", "description": "", "price": 0, "image": "/images/menu/chay-krak.jpg", "popular": false, "tags": [] },
+  { "id": 62, "category": "چای", "name": "ماچا", "description": "", "price": 0, "image": "/images/menu/macha.jpg", "popular": false, "tags": [] },
+
+  { "id": 63, "category": "شیک و اسموتی", "name": "شیک", "description": "", "price": 0, "image": "", "popular": false, "tags": [] },
+  { "id": 64, "category": "شیک و اسموتی", "name": "شیک موز نوتلا", "description": "", "price": 0, "image": "/images/menu/milkhsake-banana-notela.jpg", "popular": false, "tags": [] },
+  { "id": 65, "category": "شیک و اسموتی", "name": "شیک نوتلا", "description": "", "price": 0, "image": "/images/menu/shake-notela.jpg", "popular": false, "tags": [] },
+  { "id": 66, "category": "شیک و اسموتی", "name": "شیک توت فرنگی", "description": "", "price": 0, "image": "/images/menu/shake-strawbery.jpg", "popular": false, "tags": [] },
+  { "id": 67, "category": "شیک و اسموتی", "name": "شیک موز", "description": "", "price": 0, "image": "/images/menu/milk-shik-moz.jpg", "popular": false, "tags": [] },
+  { "id": 68, "category": "شیک و اسموتی", "name": "شیک انبه", "description": "", "price": 0, "image": "/images/menu/mango-shake.jpg", "popular": false, "tags": [] },
+  { "id": 69, "category": "شیک و اسموتی", "name": "اسموتی موز", "description": "", "price": 0, "image": "/images/menu/smothy-moz.jpg", "popular": false, "tags": [] },
+  { "id": 70, "category": "شیک و اسموتی", "name": "اسموتی توت فرنگی", "description": "", "price": 0, "image": "/images/menu/smothy-totFarangi.jpg", "popular": false, "tags": [] }
 ]
