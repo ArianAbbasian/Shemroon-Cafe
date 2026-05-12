@@ -12,7 +12,6 @@ export default function Sidebar({ categories, activeCategory, onCategoryClick })
                   : 'text-gray-700 hover:bg-amber-50/70 hover:scale-[1.01]'
                 }`}
             >
-              {/* آیکون */}
               <div className="relative w-10 h-10 flex-shrink-0">
                 <img
                   src={cat.icon}
@@ -20,7 +19,6 @@ export default function Sidebar({ categories, activeCategory, onCategoryClick })
                   className="w-full h-full object-contain group-hover:brightness-110 transition"
                 />
               </div>
-              {/* متن‌ها - کاملاً وسط‌چین */}
               <div className="w-full min-w-0 mt-1 text-center">
                 <span className="block text-sm font-semibold truncate">{cat.name}</span>
                 <span className="block text-xs text-gray-400 mt-0.5 truncate">{cat.englishName}</span>

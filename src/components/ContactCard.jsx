@@ -3,7 +3,6 @@ import { FiMapPin, FiPhone, FiInstagram } from 'react-icons/fi';
 export default function ContactCard({ address, phone, instagram, mapLinks }) {
   return (
     <div className="bg-white rounded-2xl shadow-md p-6 text-center">
-      {/* تصویر نقشه */}
       {mapLinks?.image && (
         <div className="relative -mx-6 -mt-6 mb-4 overflow-hidden rounded-t-xl aspect-[16/9]">
           <img
@@ -14,7 +13,6 @@ export default function ContactCard({ address, phone, instagram, mapLinks }) {
         </div>
       )}
 
-      {/* لینک‌های مسیریاب */}
       <div className="flex justify-center gap-3 mb-4">
         {mapLinks?.neshan && (
           <a href={mapLinks.neshan} target="_blank" rel="noopener noreferrer"
@@ -42,19 +40,16 @@ export default function ContactCard({ address, phone, instagram, mapLinks }) {
         )}
       </div>
 
-      {/* آدرس */}
       <div className="flex items-center justify-center gap-2 text-gray-700 mb-3">
         <FiMapPin className="text-amber-800" size={18} />
         <p className="text-sm">{address}</p>
       </div>
 
-      {/* شماره تماس */}
       <a href={`tel:${phone}`} className="flex items-center justify-center gap-2 text-gray-700 mb-4">
         <FiPhone className="text-amber-800" size={18} />
         <span className="text-sm font-bold">{phone}</span>
       </a>
 
-      {/* اینستاگرام */}
       {instagram && (
         <a
           href={`https://www.instagram.com/${instagram}`}

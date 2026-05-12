@@ -1,7 +1,6 @@
 export default function MenuItemCard({ item }) {
   return (
     <div className="group bg-white rounded-2xl card-shadow hover:card-hover-shadow transition-all duration-300 overflow-hidden flex flex-col">
-      {/* بخش تصویر */}
       <div className="relative aspect-[4/3] overflow-hidden">
         <img
           src={item.image}
@@ -17,7 +16,6 @@ export default function MenuItemCard({ item }) {
         )}
       </div>
 
-      {/* محتوای متن */}
       <div className="p-5 flex flex-col">
         <h3 className="text-base font-extrabold text-gray-900 mb-1.5 line-clamp-1 group-hover:text-amber-900 transition-colors">
           {item.name}

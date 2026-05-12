@@ -8,7 +8,6 @@ export default function MenuContent({
   manualScrollActive,
 }) {
   const sectionElements = useRef({});
-  // ذخیرهٔ آخرین مقدار manualScrollActive در ref برای استفاده در callback
   const manualScrollRef = useRef(manualScrollActive);
   useEffect(() => {
     manualScrollRef.current = manualScrollActive;
@@ -17,7 +16,6 @@ export default function MenuContent({
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        // اگر اسکرول دستی در حال انجام است، Observer را نادیده بگیر
         if (manualScrollRef.current) return;
 
         const visibleSections = entries.filter((entry) => entry.isIntersecting);
@@ -35,7 +33,7 @@ export default function MenuContent({
         }
       },
       {
-        rootMargin: "-80px 0px 0px 0px", // در نظر گرفتن هدر چسبنده
+        rootMargin: "-80px 0px 0px 0px",
         threshold: 0,
       },
     );
@@ -56,15 +54,13 @@ export default function MenuContent({
           ref={(el) => {
             if (el) sectionElements.current[cat.name] = el;
           }}
-          className="mb-12 scroll-mt-20" // ← scroll-mt-20 اضافه شد
+          className="mb-12 scroll-mt-20"
         >
-          {/* عنوان دسته‌بندی */}
           <h2 className="relative text-center text-3xl font-black text-amber-950 mb-10 pt-6">
             <span className="relative z-10 bg-gray-50 px-6">{cat.name}</span>
             <span className="absolute left-0 right-0 top-1/2 h-px bg-amber-300"></span>
           </h2>
 
-          {/* گرید محصولات */}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
             {groupedItems[cat.name]?.length > 0 ? (
               groupedItems[cat.name].map((item) => (

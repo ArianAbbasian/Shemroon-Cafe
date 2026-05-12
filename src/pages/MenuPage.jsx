@@ -15,22 +15,19 @@ export default function MenuPage() {
     groupedItems[cat.name] = menuItems.filter(item => item.category === cat.name);
   });
 
-  // کلیک روی یک دسته (سایدبار یا نوار موبایل)
   const handleCategoryClick = useCallback((categoryName) => {
     setActiveCategory(categoryName);
     const section = document.getElementById(`cat-${categories.find(c => c.name === categoryName)?.id}`);
     if (section) {
-      // فعال کردن پرچم اسکرول دستی
+
       setManualScrollActive(true);
       section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      // بعد از تقریباً ۷۰۰ میلی‌ثانیه اجازهٔ به‌روزرسانی مجدد را می‌دهیم
       setTimeout(() => {
         setManualScrollActive(false);
       }, 700);
     }
   }, [categories]);
 
-  // وقتی اسکرول طبیعی انجام شود و بخش جدید فعال گردد
   const handleScrollActive = useCallback((categoryName) => {
     setActiveCategory(categoryName);
   }, []);

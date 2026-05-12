@@ -1,4 +1,4 @@
-import { Outlet, Link } from 'react-router-dom';  // Link اضافه شد
+import { Outlet, Link } from 'react-router-dom';
 import Footer from './Footer';
 
 export default function Layout() {
